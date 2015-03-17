@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Author: Letheed <code@daweb.se>
+# Author: Letheed <dev@daweb.se>
 #
 # Script to extract data points from optical spectrum analysers data files.
 # Models: ANDO AQ-6315A and YOKOGAWA smthg

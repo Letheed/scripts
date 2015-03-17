@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Author: Letheed <code@daweb.se>
+# Author: Letheed <dev@daweb.se>
 #
 # Gather status information on a list of services and display it nicely.
 #

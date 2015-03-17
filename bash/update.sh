@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Author: Letheed <code@daweb.se>
+# Author: Letheed <dev@daweb.se>
 #
 # Update the system
 #

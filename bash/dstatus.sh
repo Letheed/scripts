@@ -8,7 +8,7 @@
 
 
 # List of services to test
-dList="ntp smbd nmbd transmission-daemon chtorrent plexmediaserver btsync nginx php5-fpm memcached mysql fail2ban saslauthd postfix dovecot ttrssd sagemath syncthing discosrv monit smartmontools sealion couchdb clamav-freshclam clamav-daemon"
+dList="ntp smbd nmbd transmission-daemon chtorrent plexmediaserver nginx php5-fpm memcached mysql fail2ban saslauthd postfix dovecot ttrssd sagemath syncthing discosrv smartmontools sealion clamav-freshclam clamav-daemon"
 
 # Check if we have admin priviledges
 if (( $EUID != 0 )); then

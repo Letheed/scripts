@@ -38,8 +38,25 @@ function is_dir_rust_crate
   echo "OK"
 end
 
+function run_cargo_clean
+  echo -n "cargo clean: "
+  if not cargo clean
+    echo "failed"
+    return 1
+  end
+  echo "done"
+end
+
+function run_cargo_build
+  echo -n "cargo build: "
+  if not cargo build >&-
+    return 1
+  end
+  echo "pass"
+end
+
 function run_cargo_test
-  echo -n "running cargo test: "
+  echo -n "cargo test: "
   if not cargo test >&- ^&-
     echo "failed"
     return 1
@@ -48,7 +65,7 @@ function run_cargo_test
 end
 
 function run_cargo_doc
-  echo -n "running cargo doc: "
+  echo -n "cargo doc: "
   if not cargo doc >&-
     return 1
   end
@@ -61,7 +78,7 @@ function update_doc
     return 1
   end
   echo "done"
-  echo -n "copying doc: "
+  echo -n "copying new doc: "
   if not cp -a ./target/doc/{*,.*} .
     return 1
   end
@@ -85,7 +102,8 @@ end
 cd $workdir
 and is_dir_git_repository
 and is_dir_rust_crate
-#and run_cargo_test
+and run_cargo_test
+and run_cargo_clean
 and run_cargo_doc
 #and set initial_branch (git rev-parse --abbrev-ref HEAD)
 and git checkout gh-pages >&-

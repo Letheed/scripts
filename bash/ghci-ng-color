@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+GREEN=`echo -e '\033[92m'`
+RED=`echo -e '\033[91m'`
+CYAN=`echo -e '\033[96m'`
+BLUE=`echo -e '\033[94m'`
+YELLOW=`echo -e '\033[93m'`
+PURPLE=`echo -e '\033[95m'`
+RESET=`echo -e '\033[0m'`
+
+load_failed="s/^Failed, modules loaded:/$RED&$RESET/;"
+load_done="s/\(done\)\./$GREEN\1$RESET\./g;"
+no_instance="s/^\s*No instance/$RED&$RESET/g;"
+interactive="s/<\(\w*\)>/<$RED\1$RESET>/g;"
+quote="s/‘\([^‘’]*\)’/$CYAN‘\1$CYAN’$RESET/g;"
+separators="s/\([+\/*=<>-]\|::\)/$PURPLE&$RESET/g;"
+parenthesis="s/[]{}()]/$BLUE&$RESET/g;"
+opening_sqrbracket="s/\(\[\+\)\([^09]\)/$BLUE\1$RESET\2/g;"
+string="s/\"\(\([^\"]\|\\\"\)*\)\"/$YELLOW\"$YELLOW\1$YELLOW\"$RESET/g;"
+char="s/'\(.\)'/$YELLOW'$YELLOW\1$YELLOW'$RESET/g;"
+
+exec "`which ghci-ng`" --interactive ${1+"$@"} 2>&1 |\
+    sed "$load_failed\
+         $load_done\
+         $no_instance\
+         $interactive\
+         $quote\
+         $char\
+         $string\
+         $opening_sqrbracket\
+         $separators\
+         $parenthesis"

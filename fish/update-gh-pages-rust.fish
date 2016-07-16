@@ -66,7 +66,7 @@ end
 
 function run_cargo_doc
   echo -n "cargo doc: "
-  if not cargo doc >&-
+  if not cargo doc ^&-
     return 1
   end
   echo "done"

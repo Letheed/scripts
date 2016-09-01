@@ -1,6 +1,6 @@
 # Upstart
 
-Some upstart scripts.
+Some upstart scripts:
 
 * script watching over torrent directory
 * SyncThing and discosrv

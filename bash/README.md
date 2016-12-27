@@ -8,4 +8,4 @@ Some shell scripts:
 * *update.sh*: upgrade system and RKHunter database at the same time.
 * *ghci-color*: colorize ghci's output. Based on this [original script](https://github.com/rhysd/ghci-color) + fixes and improvements. Designed with "solarized dark" in mind.
 
-![ghci-color output in a solarized-dark themed gnome-terminal](docs/ghci-color.png)
+![ghci-color output in a solarized-dark themed gnome-terminal](img/ghci-color.png)

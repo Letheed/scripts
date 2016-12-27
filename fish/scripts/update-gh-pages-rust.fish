@@ -1,4 +1,4 @@
-#! /usr/bin/fish
+#!/usr/bin/fish
 #
 # In a git repository containing a rust crate,
 # gererate the documentation with cargo doc,

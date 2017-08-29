@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Author: Letheed <dev@daweb.se>
+# Author: Letheed <letheed@outlook.com>
 #
 # Make sure that the directories I create in the torrent directory belong to debian-transmission.
 # I create them with root access to keep that video collection tidy, for access through samba share.

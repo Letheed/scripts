@@ -4,7 +4,7 @@
 # gererate the documentation with cargo doc,
 # copy it over to the gh-pages branch and commit it.
 #
-# author: Letheed <dev@daweb.se>
+# author: Letheed <letheed@outlook.com>
 #
 
 # Parameters

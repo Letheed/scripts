@@ -1,3 +1,3 @@
 function e
-	emacs $argv ^&- &
+    exa -l --git $argv
 end

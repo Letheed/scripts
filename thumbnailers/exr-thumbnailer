@@ -1,0 +1,2 @@
+#!/bin/bash
+convert "$1" -thumbnail "x$2" -colorspace sRGB -format png png:"$3"

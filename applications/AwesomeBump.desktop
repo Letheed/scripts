@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=5.0
+Type=Application
+Name=Awesome Bump
+Icon=/home/damien/bin/AwesomeBump/logo.ico
+Path=/home/damien/bin/AwesomeBump/
+Exec=/home/damien/bin/AwesomeBump/RunAwesomeBump.sh %f
+Categories=Graphics;2DGraphics;Qt;
+Terminal=false
+

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Popcorn Time
+Comment=Popcorn-Time distributed media player
+Exec=/home/damien/bin/popcorn-time/Popcorn-Time
+Type=Application
+Terminal=false
+Icon=popcorn-time
+Categories=AudioVideo;Player;Video;

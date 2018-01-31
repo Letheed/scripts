@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+    <mime-type type="image/x-aseprite">
+        <comment>sprite Aseprite</comment>
+        <glob pattern="*.ase"/>
+        <glob pattern="*.aseprite"/>
+    </mime-type>
+</mime-info>

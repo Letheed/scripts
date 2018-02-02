@@ -1,0 +1,11 @@
+[Unit]
+Description=Sage: Open Source Mathematics Software
+
+[Service]
+ExecStart=/opt/sagemath/sage --notebook=jupyter
+Restart=on-failure
+KillSignal=SIGINT
+SendSIGKILL=no
+
+[Install]
+WantedBy=multi-user.target

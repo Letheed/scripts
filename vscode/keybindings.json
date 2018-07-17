@@ -1,0 +1,24 @@
+// Placez vos combinaisons de touches dans ce fichier pour remplacer les valeurs par défaut
+[
+    {
+        "key": "ctrl+alt+l",
+        "command": "o.showOutput"
+    },
+    {
+        "key": "ctrl+l l",
+        "command": "-o.showOutput"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen",
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.quickOpen",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+[Equal]",
+        "command": "workbench.action.terminal.focus"
+    }
+]

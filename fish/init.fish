@@ -1,3 +1,5 @@
+set -gx SHELL (which fish)
+
 # Git prompt
 set -g __fish_git_prompt_show_informative_status 'yes'
 set -g __fish_git_prompt_showdirtystate 'yes'
@@ -24,3 +26,13 @@ set -g theme_git_worktree_support yes
 
 # GRC plugin
 set -g grcplugin_ls --color
+
+
+### Python ###
+
+# VirtualEnv
+set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
+
+# PyEnv
+status --is-interactive; and source (pyenv init -|psub)
+status --is-interactive; and source (pyenv virtualenv-init -|psub)

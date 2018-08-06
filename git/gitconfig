@@ -1,0 +1,63 @@
+[user]
+	name = letheed
+	email = letheed@outlook.com
+[color]
+	colorMoved = true
+[alias]
+	amend = commit --amend
+	b = branch
+	c = commit
+	co = checkout
+	d = diff --word-diff
+	dt = difftool
+	f = fetch
+	flog = log --name-status --oneline --find-renames
+	m = merge
+	mt = mergetool
+	lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ar)%Creset'
+	local = !git lg @{push}..
+	p = push
+	pf = push --force
+	pl = pull
+	pop = stash pop
+	s = stash push
+	sl = stash list
+	st = status
+[core]
+	editor = emacsclient -c
+	pager = cat
+	excludesfile = ~/.gitignore_global
+[diff]
+	mnemonicPrefix = true
+	renames = true
+	# wordRegex = .
+	submodule = log
+	tool = meld
+[fetch]
+	recurseSubmodules = on-demand
+[grep]
+	extendedRegexp = true
+[log]
+	abbrevCommit = true
+	follow = true
+[merge]
+	conflictStyle = diff3
+[mergetool]
+	keepBackup = false
+	keepTemporaries = false
+	writeToTemp = true
+	prompt = false
+	tool = meld
+[pull]
+	# rebase = preserve
+[push]
+	followTags = true
+[status]
+	renames = true
+	submoduleSummary = true
+[tag]
+	sort = version:refname
+[gc]
+	autoDetach = false
+[github]
+	oauth-token = e566520ec32aed76654456a6bbdc5a3c45eeb431

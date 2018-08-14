@@ -1,4 +1,5 @@
 {
+    "breadcrumbs.enabled": true,
     "center-editor-window.threeStateToggle": true,
     "csharp.referencesCodeLens.enabled": false,
     "crystal-lang.completion": true,
@@ -27,12 +28,11 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "gitlens.keymap": "chorded",
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
+    "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
     "gitProjectManager.baseProjectsFolders": [
         "/home/damien/src",
         "/home/damien/Graphics"
@@ -41,6 +41,7 @@
     "gitProjectManager.recentProjectsListSize": 10,
     "gitProjectManager.searchInsideProjects": false,
     "GodotTools.completeNodePath": true,
+    "julia.enableTelemetry": false,
     "markdown.preview.breaks": true,
     "python.analysis.openFilesOnly": false,
     "python.autoComplete.addBrackets": true,
@@ -117,8 +118,9 @@
         },
         "XXX",
     ],
-    "window.menuBarVisibility": "toggle",
+    "window.menuBarVisibility": "visible",
     "window.openFilesInNewWindow": "default",
+    "window.titleBarStyle": "custom",
     "workbench.colorTheme": "One Monokai",
     "workbench.commandPalette.preserveInput": true,
     "workbench.iconTheme": "vscode-icons",

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Godot
 Comment=Godot game engine
-Exec=/home/damien/bin/godot/godot %U
+Exec=/home/damien/.local/bin/godot %U
 Icon=godot
 Terminal=false
 Type=Application
